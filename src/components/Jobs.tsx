@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { MapPin, DollarSign } from "lucide-react";
 import { SpontaneousApplicationForm } from "./SpontaneousApplicationForm";
 
@@ -118,22 +119,23 @@ export const Jobs = () => {
             <p className="text-muted-foreground mb-4">
               Não encontrou a vaga ideal? Envie seu currículo mesmo assim!
             </p>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-2 border-priority text-priority hover:bg-priority hover:text-white"
-              onClick={() => setIsModalOpen(true)}
-            >
-              Cadastro Espontâneo
-            </Button>
+            <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+              <DialogTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-2 border-priority text-priority hover:bg-priority hover:text-white"
+                >
+                  Cadastro Espontâneo
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+                <SpontaneousApplicationForm />
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
-
-      <SpontaneousApplicationForm 
-        open={isModalOpen} 
-        onOpenChange={setIsModalOpen} 
-      />
     </section>
   );
 };

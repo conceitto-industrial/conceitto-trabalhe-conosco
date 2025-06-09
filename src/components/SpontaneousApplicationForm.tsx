@@ -103,7 +103,7 @@ export const SpontaneousApplicationForm = () => {
   };
 
   return (
-    <Card className="max-w-2xl mx-auto">
+    <Card className="max-w-2xl mx-auto border-0 shadow-none">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl font-bold text-conceitto-gray">
           Candidatura Espontânea
@@ -118,10 +118,8 @@ export const SpontaneousApplicationForm = () => {
             <SpontaneousApplicationFormFields control={form.control} />
             
             <FileUpload
-              onFileSelect={setResumeFile}
-              selectedFile={resumeFile}
-              accept=".pdf,.doc,.docx"
-              label="Currículo (PDF, DOC ou DOCX)"
+              file={resumeFile}
+              onFileChange={setResumeFile}
             />
 
             <Button
