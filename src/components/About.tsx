@@ -1,24 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Zap, Globe, Shield } from "lucide-react";
+
 export const About = () => {
-  const values = [{
-    icon: Heart,
-    title: "Bem-estar",
-    description: "Priorizamos o equilíbrio entre vida pessoal e profissional, oferecendo benefícios que cuidam de você e sua família."
-  }, {
-    icon: Zap,
-    title: "Inovação",
-    description: "Incentivamos a criatividade e o pensamento disruptivo para encontrar soluções que impactem positivamente o mercado."
-  }, {
-    icon: Globe,
-    title: "Diversidade",
-    description: "Valorizamos diferentes perspectivas e experiências, criando um ambiente inclusivo e colaborativo."
-  }, {
-    icon: Shield,
-    title: "Confiança",
-    description: "Construímos relacionamentos baseados na transparência, integridade e respeito mútuo."
-  }];
-  return <section className="py-20 bg-conceitto-light-gray">
+  const values = [
+    {
+      icon: Heart,
+      title: "Bem-estar",
+      description: "Priorizamos o equilíbrio entre vida pessoal e profissional, oferecendo benefícios que cuidam de você e sua família."
+    },
+    {
+      icon: Zap,
+      title: "Inovação",
+      description: "Incentivamos a criatividade e o pensamento disruptivo para encontrar soluções que impactem positivamente o mercado."
+    },
+    {
+      icon: Globe,
+      title: "Diversidade",
+      description: "Valorizamos diferentes perspectivas e experiências, criando um ambiente inclusivo e colaborativo."
+    },
+    {
+      icon: Shield,
+      title: "Confiança",
+      description: "Construímos relacionamentos baseados na transparência, integridade e respeito mútuo."
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -88,5 +96,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
