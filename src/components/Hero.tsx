@@ -1,12 +1,25 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Users, Target, Award } from "lucide-react";
+
 export const Hero = () => {
   const scrollToJobs = () => {
     document.getElementById('vagas')?.scrollIntoView({
       behavior: 'smooth'
     });
   };
-  return <section className="relative min-h-screen bg-gradient-to-br from-conceitto-dark-blue via-conceitto-blue to-conceitto-light-blue text-white overflow-hidden">
+
+  return (
+    <section className="relative min-h-screen text-white overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url(/lovable-uploads/4e2cfd1f-7c9b-4879-afa5-dce866f738b0.png)' }}
+      />
+      
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-xl"></div>
@@ -59,5 +72,6 @@ export const Hero = () => {
           <ArrowDown className="w-6 h-6 text-white" />
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
