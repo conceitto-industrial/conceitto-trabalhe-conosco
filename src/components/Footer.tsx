@@ -1,12 +1,13 @@
-
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Instagram, Linkedin, Twitter, Facebook, Settings } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const Footer = () => {
+  const navigate = useNavigate();
+
   const handleAdminAccess = () => {
-    // Por enquanto, apenas um console.log - depois implementaremos a navegação para a área admin
-    console.log("Acessar área administrativa");
+    navigate("/admin");
   };
 
   return (

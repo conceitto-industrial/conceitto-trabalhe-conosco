@@ -9,13 +9,134 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      applications: {
+        Row: {
+          area: string | null
+          created_at: string
+          email: string
+          id: string
+          job_id: string | null
+          message: string | null
+          name: string
+          phone: string
+          resume_url: string | null
+        }
+        Insert: {
+          area?: string | null
+          created_at?: string
+          email: string
+          id?: string
+          job_id?: string | null
+          message?: string | null
+          name: string
+          phone: string
+          resume_url?: string | null
+        }
+        Update: {
+          area?: string | null
+          created_at?: string
+          email?: string
+          id?: string
+          job_id?: string | null
+          message?: string | null
+          name?: string
+          phone?: string
+          resume_url?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "applications_job_id_fkey"
+            columns: ["job_id"]
+            isOneToOne: false
+            referencedRelation: "jobs"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      jobs: {
+        Row: {
+          created_at: string
+          department: string
+          description: string
+          id: string
+          is_active: boolean
+          location: string
+          requirements: string[]
+          salary: string
+          title: string
+          type: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          department: string
+          description: string
+          id?: string
+          is_active?: boolean
+          location: string
+          requirements?: string[]
+          salary: string
+          title: string
+          type: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          department?: string
+          description?: string
+          id?: string
+          is_active?: boolean
+          location?: string
+          requirements?: string[]
+          salary?: string
+          title?: string
+          type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      spontaneous_applications: {
+        Row: {
+          area: string
+          created_at: string
+          email: string
+          id: string
+          message: string | null
+          name: string
+          phone: string
+          resume_url: string | null
+        }
+        Insert: {
+          area: string
+          created_at?: string
+          email: string
+          id?: string
+          message?: string | null
+          name: string
+          phone: string
+          resume_url?: string | null
+        }
+        Update: {
+          area?: string
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string | null
+          name?: string
+          phone?: string
+          resume_url?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      is_admin: {
+        Args: Record<PropertyKey, never>
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
