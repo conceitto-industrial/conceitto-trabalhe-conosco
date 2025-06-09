@@ -7,9 +7,10 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Upload } from "lucide-react";
-
 export const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,14 +19,13 @@ export const Contact = () => {
     experience: "",
     message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate form submission
     toast({
       title: "Candidatura enviada com sucesso!",
-      description: "Entraremos em contato em breve. Obrigado pelo seu interesse!",
+      description: "Entraremos em contato em breve. Obrigado pelo seu interesse!"
     });
 
     // Reset form
@@ -38,13 +38,13 @@ export const Contact = () => {
       message: ""
     });
   };
-
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
-
-  return (
-    <section className="py-20 bg-conceitto-light-gray">
+  return <section className="py-20 bg-conceitto-light-gray">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -60,7 +60,7 @@ export const Contact = () => {
             {/* Contact Info */}
             <div className="lg:col-span-1">
               <Card className="bg-conceitto-blue text-white border-0">
-                <CardHeader>
+                <CardHeader className="bg-[t#2fa954] bg-[#2fa954]">
                   <CardTitle className="text-2xl">Fale Conosco</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -113,42 +113,24 @@ export const Contact = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Nome Completo *</Label>
-                        <Input
-                          id="name"
-                          value={formData.name}
-                          onChange={(e) => handleInputChange("name", e.target.value)}
-                          placeholder="Seu nome completo"
-                          required
-                        />
+                        <Input id="name" value={formData.name} onChange={e => handleInputChange("name", e.target.value)} placeholder="Seu nome completo" required />
                       </div>
                       
                       <div className="space-y-2">
                         <Label htmlFor="email">Email *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => handleInputChange("email", e.target.value)}
-                          placeholder="seu@email.com"
-                          required
-                        />
+                        <Input id="email" type="email" value={formData.email} onChange={e => handleInputChange("email", e.target.value)} placeholder="seu@email.com" required />
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="phone">Telefone</Label>
-                        <Input
-                          id="phone"
-                          value={formData.phone}
-                          onChange={(e) => handleInputChange("phone", e.target.value)}
-                          placeholder="(11) 99999-9999"
-                        />
+                        <Input id="phone" value={formData.phone} onChange={e => handleInputChange("phone", e.target.value)} placeholder="(11) 99999-9999" />
                       </div>
                       
                       <div className="space-y-2">
                         <Label htmlFor="position">Vaga de Interesse</Label>
-                        <Select value={formData.position} onValueChange={(value) => handleInputChange("position", value)}>
+                        <Select value={formData.position} onValueChange={value => handleInputChange("position", value)}>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecione uma vaga" />
                           </SelectTrigger>
@@ -165,7 +147,7 @@ export const Contact = () => {
 
                     <div className="space-y-2">
                       <Label htmlFor="experience">Experiência Profissional</Label>
-                      <Select value={formData.experience} onValueChange={(value) => handleInputChange("experience", value)}>
+                      <Select value={formData.experience} onValueChange={value => handleInputChange("experience", value)}>
                         <SelectTrigger>
                           <SelectValue placeholder="Selecione sua experiência" />
                         </SelectTrigger>
@@ -180,13 +162,7 @@ export const Contact = () => {
 
                     <div className="space-y-2">
                       <Label htmlFor="message">Mensagem</Label>
-                      <Textarea
-                        id="message"
-                        value={formData.message}
-                        onChange={(e) => handleInputChange("message", e.target.value)}
-                        placeholder="Conte-nos um pouco sobre você e suas motivações..."
-                        rows={4}
-                      />
+                      <Textarea id="message" value={formData.message} onChange={e => handleInputChange("message", e.target.value)} placeholder="Conte-nos um pouco sobre você e suas motivações..." rows={4} />
                     </div>
 
                     <div className="space-y-2">
@@ -209,6 +185,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
