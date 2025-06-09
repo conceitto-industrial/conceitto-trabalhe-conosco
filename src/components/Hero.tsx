@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Users, Target, Award } from "lucide-react";
-
 export const Hero = () => {
   const scrollToJobs = () => {
-    document.getElementById('vagas')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('vagas')?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="relative min-h-screen bg-gradient-to-br from-conceitto-dark-blue via-conceitto-blue to-conceitto-light-blue text-white overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-to-br from-conceitto-dark-blue via-conceitto-blue to-conceitto-light-blue text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full blur-xl"></div>
@@ -27,18 +26,10 @@ export const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              onClick={scrollToJobs}
-              size="lg" 
-              className="bg-priority hover:bg-priority-hover text-white font-semibold px-8 py-4 text-lg"
-            >
+            <Button onClick={scrollToJobs} size="lg" className="bg-priority hover:bg-priority-hover text-white font-semibold px-8 py-4 text-lg">
               Ver Vagas Disponíveis
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-conceitto-blue font-semibold px-8 py-4 text-lg"
-            >
+            <Button variant="outline" size="lg" className="border-2 border-white hover:bg-white font-semibold px-8 py-4 text-lg text-[#2fa954]">
               Conhecer a Empresa
             </Button>
           </div>
@@ -68,6 +59,5 @@ export const Hero = () => {
           <ArrowDown className="w-6 h-6 text-white" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
