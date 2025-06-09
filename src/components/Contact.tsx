@@ -63,7 +63,7 @@ export const Contact = () => {
                 <CardHeader className="bg-[t#2fa954] bg-[#2fa954]">
                   <CardTitle className="text-2xl">Fale Conosco</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-6 bg-[t#2fa954] bg-[#2fa954]">
                   <div className="flex items-start space-x-4">
                     <Mail className="w-6 h-6 mt-1 text-blue-200" />
                     <div>
