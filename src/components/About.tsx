@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Zap, Globe, Shield } from "lucide-react";
 
@@ -86,7 +87,7 @@ export const About = () => {
                   <div className="h-full flex flex-col justify-center">
                     <h4 className="text-2xl font-bold mb-4 text-white">Junte-se a nós!</h4>
                     <p className="text-white opacity-90">
-                      Mais de 500 profissionais já escolheram crescer conosco. 
+                      Mais de 40 profissionais já escolheram crescer conosco. 
                       Seja o próximo a fazer parte desta jornada extraordinária.
                     </p>
                   </div>
