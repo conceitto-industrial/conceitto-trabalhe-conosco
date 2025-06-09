@@ -7,10 +7,9 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Upload } from "lucide-react";
+
 export const Contact = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -19,6 +18,7 @@ export const Contact = () => {
     experience: "",
     message: ""
   });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -38,13 +38,16 @@ export const Contact = () => {
       message: ""
     });
   };
+
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({
       ...prev,
       [field]: value
     }));
   };
-  return <section className="py-20 bg-conceitto-light-gray">
+
+  return (
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -60,10 +63,10 @@ export const Contact = () => {
             {/* Contact Info */}
             <div className="lg:col-span-1">
               <Card className="text-white border-0 bg-[#2fa954]">
-                <CardHeader className="bg-[t#2fa954] bg-[#2fa954]">
+                <CardHeader className="bg-[#2fa954]">
                   <CardTitle className="text-2xl">Fale Conosco</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6 bg-[t#2fa954] bg-[#2fa954]">
+                <CardContent className="space-y-6 bg-[#2fa954]">
                   <div className="flex items-start space-x-4">
                     <Mail className="w-6 h-6 mt-1 text-blue-200" />
                     <div>
@@ -185,5 +188,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
