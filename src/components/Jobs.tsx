@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Clock, DollarSign } from "lucide-react";
+import { SpontaneousApplicationForm } from "./SpontaneousApplicationForm";
 
 export const Jobs = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const jobs = [
     {
       id: 1,
@@ -113,12 +117,22 @@ export const Jobs = () => {
             <p className="text-muted-foreground mb-4">
               Não encontrou a vaga ideal? Envie seu currículo mesmo assim!
             </p>
-            <Button variant="outline" size="lg" className="border-2 border-priority text-priority hover:bg-priority hover:text-white">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-2 border-priority text-priority hover:bg-priority hover:text-white"
+              onClick={() => setIsModalOpen(true)}
+            >
               Cadastro Espontâneo
             </Button>
           </div>
         </div>
       </div>
+
+      <SpontaneousApplicationForm 
+        open={isModalOpen} 
+        onOpenChange={setIsModalOpen} 
+      />
     </section>
   );
 };
