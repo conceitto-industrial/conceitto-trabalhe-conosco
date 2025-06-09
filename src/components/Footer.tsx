@@ -1,8 +1,14 @@
 
 import { Separator } from "@/components/ui/separator";
-import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Instagram, Linkedin, Twitter, Facebook, Settings } from "lucide-react";
 
 export const Footer = () => {
+  const handleAdminAccess = () => {
+    // Por enquanto, apenas um console.log - depois implementaremos a navegação para a área admin
+    console.log("Acessar área administrativa");
+  };
+
   return (
     <footer className="bg-conceitto-gray text-white py-16">
       <div className="container mx-auto px-4">
@@ -60,9 +66,20 @@ export const Footer = () => {
           <Separator className="bg-gray-700 mb-8" />
 
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Nossa Empresa. Todos os direitos reservados.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-4 md:mb-0">
+              <p className="text-gray-400 text-sm">
+                © 2024 Nossa Empresa. Todos os direitos reservados.
+              </p>
+              <Button 
+                onClick={handleAdminAccess}
+                variant="ghost" 
+                size="sm"
+                className="text-gray-400 hover:text-white hover:bg-gray-700 transition-colors"
+              >
+                <Settings className="w-4 h-4 mr-2" />
+                Admin
+              </Button>
+            </div>
             <p className="text-gray-400 text-sm">
               Desenvolvido com ❤️ pela equipe de tecnologia
             </p>
