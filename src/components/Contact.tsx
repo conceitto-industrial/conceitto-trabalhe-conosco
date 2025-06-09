@@ -199,7 +199,7 @@ export const Contact = () => {
                       </div>
                     </div>
 
-                    <Button type="submit" className="w-full bg-conceitto-green hover:bg-conceitto-light-green text-lg py-3">
+                    <Button type="submit" className="w-full bg-priority hover:bg-priority-hover text-lg py-3">
                       Enviar Candidatura
                     </Button>
                   </form>

@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom Conceitto-inspired colors
+				// Custom Conceitto-inspired colors with priority color
 				conceitto: {
 					blue: 'hsl(var(--conceitto-blue))',
 					'dark-blue': 'hsl(var(--conceitto-dark-blue))',
@@ -62,6 +62,12 @@ export default {
 					'light-green': 'hsl(var(--conceitto-light-green))',
 					gray: 'hsl(var(--conceitto-gray))',
 					'light-gray': 'hsl(var(--conceitto-light-gray))',
+				},
+				// Priority color #2FA954
+				priority: {
+					DEFAULT: '#2FA954',
+					hover: '#268a45',
+					light: '#4bb968',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

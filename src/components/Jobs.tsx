@@ -67,10 +67,10 @@ export const Jobs = () => {
               <Card key={job.id} className="hover:shadow-xl transition-all duration-300 border-0 bg-conceitto-light-gray hover:bg-white">
                 <CardHeader className="pb-4">
                   <div className="flex justify-between items-start mb-2">
-                    <Badge variant="secondary" className="bg-conceitto-blue/10 text-conceitto-blue">
+                    <Badge variant="secondary" className="bg-priority/10 text-priority">
                       {job.department}
                     </Badge>
-                    <Badge variant="outline" className="border-conceitto-green text-conceitto-green">
+                    <Badge variant="outline" className="border-priority text-priority">
                       {job.type}
                     </Badge>
                   </div>
@@ -102,7 +102,7 @@ export const Jobs = () => {
                     </div>
                   </div>
 
-                  <Button className="w-full bg-conceitto-blue hover:bg-conceitto-dark-blue">
+                  <Button className="w-full bg-priority hover:bg-priority-hover">
                     Candidatar-se
                   </Button>
                 </CardContent>
@@ -114,7 +114,7 @@ export const Jobs = () => {
             <p className="text-muted-foreground mb-4">
               Não encontrou a vaga ideal? Envie seu currículo mesmo assim!
             </p>
-            <Button variant="outline" size="lg" className="border-2 border-conceitto-blue text-conceitto-blue hover:bg-conceitto-blue hover:text-white">
+            <Button variant="outline" size="lg" className="border-2 border-priority text-priority hover:bg-priority hover:text-white">
               Cadastro Espontâneo
             </Button>
           </div>

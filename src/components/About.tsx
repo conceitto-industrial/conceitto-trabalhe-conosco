@@ -44,8 +44,8 @@ export const About = () => {
             {values.map((value, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-conceitto-blue/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <value.icon className="w-8 h-8 text-conceitto-blue" />
+                  <div className="w-16 h-16 bg-priority/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <value.icon className="w-8 h-8 text-priority" />
                   </div>
                   <h3 className="text-xl font-semibold mb-4 text-conceitto-gray">{value.title}</h3>
                   <p className="text-muted-foreground">{value.description}</p>
@@ -67,19 +67,19 @@ export const About = () => {
                 </p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-conceitto-green rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-priority rounded-full mr-3"></div>
                     Horários flexíveis e trabalho remoto
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-conceitto-green rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-priority rounded-full mr-3"></div>
                     Programa de desenvolvimento pessoal
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-conceitto-green rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-priority rounded-full mr-3"></div>
                     Ambiente colaborativo e inclusivo
                   </li>
                   <li className="flex items-center">
-                    <div className="w-2 h-2 bg-conceitto-green rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-priority rounded-full mr-3"></div>
                     Oportunidades de crescimento internacional
                   </li>
                 </ul>

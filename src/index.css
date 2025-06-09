@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 15% 15%;
 
-    --primary: 210 100% 25%;
+    --primary: 142 76% 36%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,11 +33,11 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 210 100% 25%;
+    --ring: 142 76% 36%;
 
     --radius: 0.5rem;
 
-    /* Custom Conceitto-inspired colors */
+    /* Custom Conceitto-inspired colors with new priority color */
     --conceitto-blue: 210 100% 25%;
     --conceitto-dark-blue: 210 100% 20%;
     --conceitto-light-blue: 210 100% 30%;
@@ -48,12 +48,12 @@
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 210 15% 15%;
-    --sidebar-primary: 210 100% 25%;
+    --sidebar-primary: 142 76% 36%;
     --sidebar-primary-foreground: 0 0% 98%;
     --sidebar-accent: 210 40% 96.1%;
     --sidebar-accent-foreground: 210 15% 15%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 210 100% 25%;
+    --sidebar-ring: 142 76% 36%;
   }
 
   .dark {

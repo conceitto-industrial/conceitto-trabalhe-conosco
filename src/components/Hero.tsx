@@ -19,7 +19,7 @@ export const Hero = () => {
       <div className="relative container mx-auto px-4 py-20 flex flex-col justify-center min-h-screen">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Trabalhe <span className="text-conceitto-green">Conosco</span>
+            Trabalhe <span className="text-priority">Conosco</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 animate-fade-in">
@@ -31,7 +31,7 @@ export const Hero = () => {
             <Button 
               onClick={scrollToJobs}
               size="lg" 
-              className="bg-conceitto-green hover:bg-conceitto-light-green text-white font-semibold px-8 py-4 text-lg"
+              className="bg-priority hover:bg-priority-hover text-white font-semibold px-8 py-4 text-lg"
             >
               Ver Vagas Disponíveis
             </Button>
@@ -47,17 +47,17 @@ export const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="flex flex-col items-center">
-              <Users className="w-12 h-12 mb-4 text-conceitto-green" />
+              <Users className="w-12 h-12 mb-4 text-priority" />
               <div className="text-3xl font-bold mb-2">500+</div>
               <div className="text-blue-100">Colaboradores</div>
             </div>
             <div className="flex flex-col items-center">
-              <Target className="w-12 h-12 mb-4 text-conceitto-green" />
+              <Target className="w-12 h-12 mb-4 text-priority" />
               <div className="text-3xl font-bold mb-2">15+</div>
               <div className="text-blue-100">Anos no Mercado</div>
             </div>
             <div className="flex flex-col items-center">
-              <Award className="w-12 h-12 mb-4 text-conceitto-green" />
+              <Award className="w-12 h-12 mb-4 text-priority" />
               <div className="text-3xl font-bold mb-2">50+</div>
               <div className="text-blue-100">Prêmios Recebidos</div>
             </div>
