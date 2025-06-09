@@ -87,8 +87,8 @@ export const About = () => {
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-conceitto-blue to-conceitto-light-blue rounded-2xl p-8 text-white">
                   <div className="h-full flex flex-col justify-center">
-                    <h4 className="text-2xl font-bold mb-4">Junte-se a nós!</h4>
-                    <p className="text-blue-100">
+                    <h4 className="text-2xl font-bold mb-4 text-white">Junte-se a nós!</h4>
+                    <p className="text-white opacity-90">
                       Mais de 500 profissionais já escolheram crescer conosco. 
                       Seja o próximo a fazer parte desta jornada extraordinária.
                     </p>
