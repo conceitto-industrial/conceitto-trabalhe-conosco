@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -45,14 +44,14 @@ export const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-conceitto-light-gray">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-conceitto-gray">
               Entre em Contato
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Pronto para dar o próximo passo? Envie sua candidatura ou tire suas dúvidas conosco.
             </p>
           </div>
@@ -60,7 +59,7 @@ export const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <Card className="bg-blue-600 text-white border-0">
+              <Card className="bg-conceitto-blue text-white border-0">
                 <CardHeader>
                   <CardTitle className="text-2xl">Fale Conosco</CardTitle>
                 </CardHeader>
@@ -107,7 +106,7 @@ export const Contact = () => {
             <div className="lg:col-span-2">
               <Card className="border-0 bg-white shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-gray-900">Envie sua Candidatura</CardTitle>
+                  <CardTitle className="text-2xl text-conceitto-gray">Envie sua Candidatura</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -200,7 +199,7 @@ export const Contact = () => {
                       </div>
                     </div>
 
-                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-lg py-3">
+                    <Button type="submit" className="w-full bg-conceitto-green hover:bg-conceitto-light-green text-lg py-3">
                       Enviar Candidatura
                     </Button>
                   </form>

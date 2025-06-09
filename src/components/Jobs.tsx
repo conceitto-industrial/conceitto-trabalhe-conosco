@@ -53,10 +53,10 @@ export const Jobs = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-conceitto-gray">
               Vagas Disponíveis
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Encontre a oportunidade perfeita para dar o próximo passo na sua carreira. 
               Todas as nossas vagas oferecem excelentes benefícios e ambiente de crescimento.
             </p>
@@ -64,19 +64,19 @@ export const Jobs = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {jobs.map((job) => (
-              <Card key={job.id} className="hover:shadow-xl transition-all duration-300 border-0 bg-gray-50 hover:bg-white">
+              <Card key={job.id} className="hover:shadow-xl transition-all duration-300 border-0 bg-conceitto-light-gray hover:bg-white">
                 <CardHeader className="pb-4">
                   <div className="flex justify-between items-start mb-2">
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                    <Badge variant="secondary" className="bg-conceitto-blue/10 text-conceitto-blue">
                       {job.department}
                     </Badge>
-                    <Badge variant="outline" className="border-green-300 text-green-700">
+                    <Badge variant="outline" className="border-conceitto-green text-conceitto-green">
                       {job.type}
                     </Badge>
                   </div>
-                  <CardTitle className="text-xl mb-3 text-gray-900">{job.title}</CardTitle>
+                  <CardTitle className="text-xl mb-3 text-conceitto-gray">{job.title}</CardTitle>
                   
-                  <div className="flex flex-col sm:flex-row gap-4 text-sm text-gray-600">
+                  <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center">
                       <MapPin className="w-4 h-4 mr-2" />
                       {job.location}
@@ -89,10 +89,10 @@ export const Jobs = () => {
                 </CardHeader>
 
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{job.description}</p>
+                  <p className="text-muted-foreground mb-4">{job.description}</p>
                   
                   <div className="mb-6">
-                    <h4 className="font-semibold mb-2 text-gray-900">Requisitos:</h4>
+                    <h4 className="font-semibold mb-2 text-conceitto-gray">Requisitos:</h4>
                     <div className="flex flex-wrap gap-2">
                       {job.requirements.map((req, index) => (
                         <Badge key={index} variant="outline" className="text-xs">
@@ -102,7 +102,7 @@ export const Jobs = () => {
                     </div>
                   </div>
 
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button className="w-full bg-conceitto-blue hover:bg-conceitto-dark-blue">
                     Candidatar-se
                   </Button>
                 </CardContent>
@@ -111,10 +111,10 @@ export const Jobs = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">
+            <p className="text-muted-foreground mb-4">
               Não encontrou a vaga ideal? Envie seu currículo mesmo assim!
             </p>
-            <Button variant="outline" size="lg" className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">
+            <Button variant="outline" size="lg" className="border-2 border-conceitto-blue text-conceitto-blue hover:bg-conceitto-blue hover:text-white">
               Cadastro Espontâneo
             </Button>
           </div>

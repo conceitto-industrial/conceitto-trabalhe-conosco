@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -51,6 +52,16 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Custom Conceitto-inspired colors
+				conceitto: {
+					blue: 'hsl(var(--conceitto-blue))',
+					'dark-blue': 'hsl(var(--conceitto-dark-blue))',
+					'light-blue': 'hsl(var(--conceitto-light-blue))',
+					green: 'hsl(var(--conceitto-green))',
+					'light-green': 'hsl(var(--conceitto-light-green))',
+					gray: 'hsl(var(--conceitto-gray))',
+					'light-gray': 'hsl(var(--conceitto-light-gray))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

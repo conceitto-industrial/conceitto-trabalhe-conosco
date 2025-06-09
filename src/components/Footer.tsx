@@ -4,7 +4,7 @@ import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-conceitto-gray text-white py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
@@ -17,16 +17,16 @@ export const Footer = () => {
                 nesta jornada extraordinária.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                <a href="#" className="w-10 h-10 bg-conceitto-blue rounded-full flex items-center justify-center hover:bg-conceitto-green transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                <a href="#" className="w-10 h-10 bg-conceitto-blue rounded-full flex items-center justify-center hover:bg-conceitto-green transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                <a href="#" className="w-10 h-10 bg-conceitto-blue rounded-full flex items-center justify-center hover:bg-conceitto-green transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
+                <a href="#" className="w-10 h-10 bg-conceitto-blue rounded-full flex items-center justify-center hover:bg-conceitto-green transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
               </div>
@@ -36,11 +36,11 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">Sobre Nós</a></li>
-                <li><a href="#vagas" className="hover:text-white transition-colors">Vagas</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cultura</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Benefícios</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Sobre Nós</a></li>
+                <li><a href="#vagas" className="hover:text-conceitto-green transition-colors">Vagas</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Cultura</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Benefícios</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Blog</a></li>
               </ul>
             </div>
 
@@ -48,11 +48,11 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Suporte</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contato</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Política de Privacidade</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Termos de Uso</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">LGPD</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">FAQ</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Contato</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Política de Privacidade</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">Termos de Uso</a></li>
+                <li><a href="#" className="hover:text-conceitto-green transition-colors">LGPD</a></li>
               </ul>
             </div>
           </div>
