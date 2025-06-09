@@ -59,7 +59,7 @@ export const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <Card className="bg-conceitto-blue text-white border-0">
+              <Card className="text-white border-0 bg-[#2fa954]">
                 <CardHeader className="bg-[t#2fa954] bg-[#2fa954]">
                   <CardTitle className="text-2xl">Fale Conosco</CardTitle>
                 </CardHeader>
