@@ -1,33 +1,24 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Zap, Globe, Shield } from "lucide-react";
-
 export const About = () => {
-  const values = [
-    {
-      icon: Heart,
-      title: "Bem-estar",
-      description: "Priorizamos o equilíbrio entre vida pessoal e profissional, oferecendo benefícios que cuidam de você e sua família."
-    },
-    {
-      icon: Zap,
-      title: "Inovação",
-      description: "Incentivamos a criatividade e o pensamento disruptivo para encontrar soluções que impactem positivamente o mercado."
-    },
-    {
-      icon: Globe,
-      title: "Diversidade",
-      description: "Valorizamos diferentes perspectivas e experiências, criando um ambiente inclusivo e colaborativo."
-    },
-    {
-      icon: Shield,
-      title: "Confiança",
-      description: "Construímos relacionamentos baseados na transparência, integridade e respeito mútuo."
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-conceitto-light-gray">
+  const values = [{
+    icon: Heart,
+    title: "Bem-estar",
+    description: "Priorizamos o equilíbrio entre vida pessoal e profissional, oferecendo benefícios que cuidam de você e sua família."
+  }, {
+    icon: Zap,
+    title: "Inovação",
+    description: "Incentivamos a criatividade e o pensamento disruptivo para encontrar soluções que impactem positivamente o mercado."
+  }, {
+    icon: Globe,
+    title: "Diversidade",
+    description: "Valorizamos diferentes perspectivas e experiências, criando um ambiente inclusivo e colaborativo."
+  }, {
+    icon: Shield,
+    title: "Confiança",
+    description: "Construímos relacionamentos baseados na transparência, integridade e respeito mútuo."
+  }];
+  return <section className="py-20 bg-conceitto-light-gray">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -41,8 +32,7 @@ export const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            {values.map((value, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
+            {values.map((value, index) => <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 bg-white">
                 <CardContent className="p-8 text-center">
                   <div className="w-16 h-16 bg-priority/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <value.icon className="w-8 h-8 text-priority" />
@@ -50,8 +40,7 @@ export const About = () => {
                   <h3 className="text-xl font-semibold mb-4 text-conceitto-gray">{value.title}</h3>
                   <p className="text-muted-foreground">{value.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl">
@@ -85,7 +74,7 @@ export const About = () => {
                 </ul>
               </div>
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-conceitto-blue to-conceitto-light-blue rounded-2xl p-8 text-white">
+                <div className="aspect-square from-conceitto-blue to-conceitto-light-blue rounded-2xl p-8 text-white bg-[t#2fa954] bg-[#2fa954]">
                   <div className="h-full flex flex-col justify-center">
                     <h4 className="text-2xl font-bold mb-4 text-white">Junte-se a nós!</h4>
                     <p className="text-white opacity-90">
@@ -99,6 +88,5 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
