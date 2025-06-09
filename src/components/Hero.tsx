@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Users, Target, Award } from "lucide-react";
 
@@ -50,7 +51,7 @@ export const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="flex flex-col items-center">
               <Users className="w-12 h-12 mb-4 text-priority" />
-              <div className="text-3xl font-bold mb-2">500+</div>
+              <div className="text-3xl font-bold mb-2">40+</div>
               <div className="text-blue-100">Colaboradores</div>
             </div>
             <div className="flex flex-col items-center">
