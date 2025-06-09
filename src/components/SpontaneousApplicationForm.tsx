@@ -83,16 +83,11 @@ export const SpontaneousApplicationForm = ({
   };
 
   const onSubmit = (data: FormData) => {
-    console.log("Form data:", data);
-    console.log("File:", file);
-
-    // Simular envio
     toast({
       title: "Sucesso!",
       description: "Seu cadastro foi enviado com sucesso. Entraremos em contato em breve!",
     });
 
-    // Reset form and close modal
     form.reset();
     setFile(null);
     onOpenChange(false);

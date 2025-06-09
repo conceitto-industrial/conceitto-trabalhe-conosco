@@ -1,8 +1,9 @@
+
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, Clock, DollarSign } from "lucide-react";
+import { MapPin, DollarSign } from "lucide-react";
 import { SpontaneousApplicationForm } from "./SpontaneousApplicationForm";
 
 export const Jobs = () => {
