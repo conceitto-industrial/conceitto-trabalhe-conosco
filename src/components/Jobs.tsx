@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -64,7 +63,7 @@ export const Jobs = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {jobs.map((job) => (
-              <Card key={job.id} className="hover:shadow-xl transition-all duration-300 border-0 bg-conceitto-light-gray hover:bg-white">
+              <Card key={job.id} className="hover:shadow-xl transition-all duration-300 border-0 bg-gray-50 hover:bg-white">
                 <CardHeader className="pb-4">
                   <div className="flex justify-between items-start mb-2">
                     <Badge variant="secondary" className="bg-priority/10 text-priority">
