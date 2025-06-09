@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Users, Target, Award } from "lucide-react";
 
@@ -42,7 +41,7 @@ export const Hero = () => {
             <Button onClick={scrollToJobs} size="lg" className="bg-priority hover:bg-priority-hover text-white font-semibold px-8 py-4 text-lg">
               Ver Vagas Disponíveis
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-white hover:bg-white font-semibold px-8 py-4 text-lg text-[#2fa954]">
+            <Button variant="outline" size="lg" className="border-2 border-white hover:bg-white hover:text-priority-hover font-semibold px-8 py-4 text-lg text-[#2fa954]">
               Conhecer a Empresa
             </Button>
           </div>
