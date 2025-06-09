@@ -18,7 +18,7 @@ export const Hero = () => {
       />
       
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="absolute inset-0 bg-black bg-opacity-70" />
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
