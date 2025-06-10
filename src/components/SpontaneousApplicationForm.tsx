@@ -1,4 +1,3 @@
-
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -19,7 +18,7 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
-type FormData = z.infer<typeof formSchema>;
+export type FormData = z.infer<typeof formSchema>;
 
 export const SpontaneousApplicationForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
