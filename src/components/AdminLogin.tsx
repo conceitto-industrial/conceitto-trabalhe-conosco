@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -9,6 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const loginSchema = z.object({
   email: z.string().email("Email inválido"),
@@ -71,6 +72,15 @@ export const AdminLogin = ({ onLogin }: AdminLoginProps) => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-md">
         <CardHeader>
+          <div className="flex items-center justify-between mb-4">
+            <Link 
+              to="/" 
+              className="flex items-center text-sm text-muted-foreground hover:text-priority transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Voltar ao site
+            </Link>
+          </div>
           <CardTitle className="text-2xl font-bold text-center text-conceitto-gray">
             Área Administrativa
           </CardTitle>
